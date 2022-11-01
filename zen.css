@@ -1,0 +1,264 @@
+/* 
+#55977C light green
+#def5e6 white-ish
+#070302 black-ish
+#9a1c85 purple
+ */
+
+*{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+/* ---below: background for the front page--- */
+body.welcome {
+    background-image: url(img/backgroundadapted.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #070302;
+}
+/* ---background for the other three pages ----
+If you want to change the backrgound of your page, just add a different class to the body tag on the specific page--- */
+body.colour-background {
+    background-color: rgb(30, 30, 30);
+}
+header {
+    color: #def5e6;
+    margin-top: 50px;
+    }
+.logo {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    z-index: 9999;
+}
+
+/* --------------------- Navigationsbar---------------- */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    text-align: right;
+    background-color: #070302e8;
+    margin: 0;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    font-weight: bold;
+    width: 100%;
+    height: 75px;
+   }
+.navbar-nav > .active > a { 
+    color: #55977C; 
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-right: 2em;
+    font-size: 1.2em;
+}
+nav li {
+    display: inline;
+    padding-left: 2em;
+   }
+nav a {
+    text-decoration: none;
+    color: #9a1c85;
+   }
+nav a:hover {
+    color: #d96ec7;
+   }
+
+   /* --------------------- Headers ---------------- */
+h1, h2, h3 {
+    font-family: 'Satisfy', cursive;
+    margin: 0px;
+    padding: 0px;
+    line-height: 100%;
+}
+.frontpage-headertext {
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 400px;
+    font-size: 400%;
+}
+
+ /* --------------------- body text ----------------
+ middletext is black on front page */ 
+.middletext {
+    text-align: center;
+    margin-left: 400px;
+    color: #070302;
+}
+
+/*  ------------------------ paragraph text: use class for different colours --------- */
+.paragraphstil1 {
+    color: #e1cddd;
+}
+
+/* ----------------------------stil side 1: what to expect (husk at bruge class/id til alt)----------------*/
+.expect1 > p{
+    color: #def5e6;
+}
+.expect1 > h2{
+    color: #55977C;
+    font-size: 300%;
+}
+.expect1 > h3{
+    color: #55977C;
+}
+
+
+/* ---------------------------stil side 2: book (husk at bruge class/id til alt)----------------*/
+
+/* cabin paragraphs */
+.cabin2 {
+    overflow: hidden;
+    padding-right: 10%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 40px;
+    border: none;
+    background-color: rgb(30, 30, 30);
+}
+.cabin3 {
+    overflow: hidden;
+    padding-right: 10%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 40px;
+    background-color: rgb(30, 30, 30);
+}
+.cabin-info2 {
+    color: #def5e6;
+    margin-left: 20%;
+    max-width: 35%;
+    line-height: 160%;
+
+}
+.cabin-info2 > h2 {
+color: #55977C;
+font-size: 300%;
+}
+
+/* intro */
+.introtext2 {
+    max-width: 50%;
+    margin-left: 38%; 
+    line-height: 150%;
+    font-size: 125%;
+}
+
+/* book button */
+.book-button {
+    background-color: #9a1c85;
+    color: #070302;
+    cursor: pointer;
+    padding: 14px;
+    width: 130px;
+    border: none;
+    text-align: center;
+    margin-left: 30%;
+    margin-bottom: 8px;
+    outline: none;
+    font-size: 110%;
+    border-radius: 25px;
+}
+.book-button:hover {
+    background-color: #d96ec7;
+}
+
+
+/* collapsible button */
+.collapsible {
+    background-color: #1f7e56;
+    color: #070302;
+    cursor: pointer;
+    padding: 14px;
+    width: 130px;
+    border: none;
+    text-align: center;
+    margin-left: 30%;
+    outline: none;
+    font-size: 110%;
+    border-radius: 25px;
+  }
+  
+  .collapsible:hover {
+    background-color: #55977C;
+  }
+  
+/* collapsible content */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: rgb(30, 30, 30);
+  }
+  .roll-out {
+      float: left;
+      max-width: 25%;
+      margin-top: 30px;
+      margin-left: 50px;
+      color: #def5e6;
+      line-height: 160%;
+  }
+
+/* Booking form */
+.bookingform {
+    color: #def5e6;
+    background-color: #070302;
+    margin-left: 25%;
+    max-width: 50%;
+    /* margin: 10% 10%; */
+    padding-left: 90px;
+    padding-right:90px;
+    padding-bottom: 90px;
+    border-color: #55977C;
+    border-style: solid;
+}
+.bookingform > h2 {
+    padding-top: 90px;
+    color: #d96ec7;
+    font-size: 300%;
+}
+.submit-button {
+    background-color: #9a1c85;
+    color: #070302;
+    cursor: pointer;
+    padding: 14px;
+    width: auto;
+    border: none;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 8px;
+    outline: none;
+    font-size: 110%;
+    border-radius: 25px;
+}
+.submit-button:hover {
+    background-color: #d96ec7;
+}
+
+
+
+/* -----------------------------------stil side 3: about us (husk at bruge class/id til alt)----------------*/
+
+
+
+
+
+
+
+ /* ------------------------------------------------------ Footer text ---------------- */
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    max-width: 100%;
+    color: #def5e6;
+}
